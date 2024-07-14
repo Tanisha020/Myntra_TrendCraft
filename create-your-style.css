@@ -1,0 +1,92 @@
+@import url('common.css');
+
+/* Hero section styles */
+.hero {
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* How to create section styles */
+.how-to-create {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Heading styles */
+.heading {
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 70px;
+    color: #4D0033;
+}
+
+.heading2 {
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 40px;
+    color: #6E0F4B;
+}
+
+/* Steps container styles */
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Step item styles */
+.step {
+    padding: 30px;
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Content text styles */
+.content {
+    font-family: Roboto, ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #B24683;
+    font-size: 20px;
+}
+
+/* Responsive design for screens 768px and smaller */
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .heading2 {
+        font-size: 30px;
+    }
+
+    .steps {
+        flex-wrap: wrap;
+    }
+
+    .steps .step {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive design for screens 480px and smaller */
+@media only screen and (max-width: 480px) {
+    .hero {
+        height: 200px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .heading2 {
+        font-size: 25px;
+    }
+
+    .steps .step {
+        padding: 20px;
+    }
+}

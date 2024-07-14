@@ -1,0 +1,221 @@
+@import url('common.css'); /* Import common styles */
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background-image: radial-gradient(#000000 1px, #feeef5 1px);
+    background-size: 30px 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Discover Style section styling */
+.discover-style {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Headings styling */
+.heading {
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 70px;
+    color: #4D0033;
+}
+
+.heading3 {
+    font-size: 40px;
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #6E0F4B;
+}
+
+/* Content text styling */
+.content {
+    font-family: Roboto, ui-sans-serif, system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    color: #B24683;
+}
+
+/* Features section styling */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.features .feature {
+    flex: 1;
+    max-width: 450px;
+}
+
+/* Individual feature box styling */
+.feature {
+    border: 2px solid rgb(142, 118, 142);
+    border-radius: 80px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #feeef5;
+}
+
+/* Reviews section styling */
+.reviews {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+/* Review container styling */
+.review {
+    display: flex;
+}
+
+/* Individual comment styling */
+.comments img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.comments {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    align-self: 100px;
+    background-color: #fdfcfe;
+}
+
+.comment {
+    width: 500px;
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+/* Section heading styling */
+.heading2 {
+    font-size: 50px;
+    color: #f5eefa;
+    margin-inline: 50px;
+    padding: 20px;
+    border: 1px solid #f4eff8;
+    border-radius: 50px;
+    background-color: #902666;
+}
+
+/* Challenges section styling */
+.challenges {
+    display: flex;
+    justify-content: space-around;
+    padding: 150px 20px;
+    text-align: center;
+    background-color: #d6bde3;
+}
+
+.challenges ul {
+    list-style: none;
+    padding: 0;
+}
+
+.challenges ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.challenges ul li img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+/* Card styling */
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #B24683;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    fill: #f7e5ff;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover img {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comments {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .challenges {
+        flex-direction: column;
+    }
+    .challenges ul li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,115 @@
+/* Importing styles from common.css */
+@import url('common.css');
+
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Font family */
+    background-color: #fff7fa; /* Background color */
+    min-height: 100vh; /* Minimum height of the viewport */
+}
+
+/* Styling for the main container */
+.container {
+    padding: 20px; /* Padding inside the container */
+    margin: 20px; /* Margin around the container */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Vertical column layout */
+    align-items: center; /* Center align items horizontally */
+    border: 3px solid #4D0033; /* Border with color */
+    background-color: #FFFFFF; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    max-width: 100%; /* Maximum width */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Styling for clothing items */
+.item {
+    height: 200px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    border: 2px solid #4D0033; /* Border with color */
+    border-radius: 10px; /* Rounded corners */
+    background: url('https://i.pinimg.com/originals/27/12/a3/2712a3e1c381884563febf571f1dab73.jpg'); /* Default background image */
+    margin: 10px; /* Margin around items */
+    transition: transform 0.2s ease-in-out; /* Smooth transformation on hover */
+}
+
+/* Styling for the model display */
+.model {
+    background-image: url('https://wallpapersko.com/wp-content/uploads/ktz/Plain-Hd-Background-nu4ucbzt7uktptv8u6u7wqrz0pr5jj973kp2p97asy.jpg'); /* Model background image */
+    background-repeat: no-repeat; /* No repeat for background */
+    background-size: cover; /* Cover background */
+    max-width: 100%; /* Maximum width */
+    height: auto; /* Automatic height */
+    border: 2px solid #4D0033; /* Border with color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #FABDD8; /* Background color */
+    margin: 10px; /* Margin around items */
+    transition: transform 0.2s ease-in-out; /* Smooth transformation on hover */
+}
+
+/* Styling for the model display area */
+.model-display {
+    background-image: url(); /* Empty initially */
+}
+
+/* Hover effect for items and models */
+.item:hover,
+.model:hover {
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Styling for selected items */
+.selected {
+    height: 200px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    border: 2px solid #4D0033; /* Border with color */
+    border-radius: 10px; /* Rounded corners */
+    background: url('https://i.pinimg.com/originals/27/12/a3/2712a3e1c381884563febf571f1dab73.jpg'); /* Default background for selected items */
+    margin: 10px; /* Margin around items */
+}
+
+/* Styling for content headers */
+.content {
+    display: flex; /* Using flexbox for layout */
+    margin: 15px; /* Margin */
+    padding: 15px; /* Padding */
+    border: 4px solid #350525; /* Border with color */
+    border-radius: 50px; /* Rounded corners */
+    justify-content: center; /* Center align content horizontally */
+    background-color: #4D0033; /* Background color */
+    font-size: 50px; /* Font size */
+    font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Font family */
+    color: #fffafd; /* Text color */
+}
+
+/* Styling for the selected model */
+#selected-model {
+    border: 2px solid #4D0033; /* Border with color */
+    border-radius: 10px; /* Rounded corners */
+    background-image: url('https://wallpapersko.com/wp-content/uploads/ktz/Plain-Hd-Background-nu4ucbzt7uktptv8u6u7wqrz0pr5jj973kp2p97asy.jpg'); /* Default background for selected model */
+}
+
+/* Styling for the submit button */
+#submit {
+    margin: 30px; /* Margin */
+    padding: 15px 30px; /* Padding */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #6E0F4B; /* Background color */
+    font-size: 24px; /* Font size */
+    color: #FFFFFF; /* Text color */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for the submit button */
+#submit:hover {
+    background-color: #4D0033; /* Darker background on hover */
+}

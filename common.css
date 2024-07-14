@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif; /* Set the default font for the body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+header {
+  background-color: #4D0033; /* Dark purple background color for the header */
+  border: 3px solid rgb(236, 206, 236); /* Light purple border */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Vertical padding */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Display list items in a row */
+  justify-content: center; /* Center the items horizontally */
+  padding: 10px; /* Padding inside the nav */
+  margin: 0; /* Remove default margin */
+}
+
+footer ul li, nav ul li {
+  margin: 0 20px; /* Horizontal margin between list items */
+}
+
+.btn-12 span a {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+footer {
+  background-color: #4D0033; /* Dark purple background color for the footer */
+  color: #fff; /* White text color */
+  border: 3px solid rgb(236, 206, 236); /* Light purple border */
+  text-align: center; /* Center the text */
+  padding: 20px 0; /* Vertical padding */
+}
+
+footer ul {
+  list-style: none; /* Remove default list styling */
+  padding: 10px; /* Padding inside the footer */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Display list items in a row */
+  justify-content: center; /* Center the items horizontally */
+  gap: 10px; /* Gap between list items */
+}
+
+/* Reset styles and box-sizing for .btn-12 and its pseudo-elements */
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-12 {
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight color on mobile */
+  -webkit-appearance: button; /* Ensure button appearance */
+  background-color: #fff8fb; /* Light pink background color */
+  background-image: none; /* Remove background image */
+  color: #000000; /* Black text color */
+  cursor: pointer; /* Pointer cursor */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; /* Font stack */
+  font-size: 100%; /* Default font size */
+  font-weight: 900; /* Bold font weight */
+  line-height: 1.5; /* Line height */
+  margin: 0; /* Remove default margin */
+  -webkit-mask-image: -webkit-radial-gradient(#fff8fb, #000); /* Mask image for radial gradient */
+  padding: 0; /* Remove padding */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.btn-12:disabled {
+  cursor: default; /* Default cursor when disabled */
+}
+
+.btn-12:-moz-focusring {
+  outline: auto; /* Auto outline for focus */
+}
+
+.btn-12 svg {
+  display: block; /* Display SVG as block */
+  vertical-align: middle; /* Vertically align middle */
+}
+
+.btn-12 [hidden] {
+  display: none; /* Hide elements with hidden attribute */
+}
+
+.btn-12 {
+  border-radius: 99rem; /* Round border radius */
+  border-width: 2px; /* Border width */
+  overflow: hidden; /* Hide overflow */
+  padding: 0.8rem 3rem; /* Padding inside the button */
+  position: relative; /* Relative positioning */
+}
+
+.btn-12 span {
+  mix-blend-mode: difference; /* Blend mode for span */
+}
+
+/* Pseudo-elements for animated border effect */
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(90deg, #000 25%, transparent 0, transparent 50%, #000 0, #000 75%, transparent 0); /* Gradient background */
+  content: ""; /* Empty content */
+  inset: 0; /* Positioning */
+  position: absolute; /* Absolute positioning */
+  transform: translateY(var(--progress, 100%)); /* Translate based on --progress variable */
+  transition: transform 0.2s ease; /* Transition effect */
+}
+
+.btn-12:after {
+  --progress: -100%; /* Initial progress for after pseudo-element */
+  background: linear-gradient(90deg, transparent 0, transparent 25%, #000 0, #000 50%, transparent 0, transparent 75%, #000 0); /* Different gradient for after pseudo-element */
+  z-index: -1; /* Z-index for layering */
+}
+
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0; /* Change progress on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center the items */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Vertical margin between nav items */
+  }
+
+  footer ul {
+    flex-direction: column; /* Stack footer items vertically */
+  }
+}
