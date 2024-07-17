@@ -68,5 +68,8 @@ The frontend includes a sleek and interactive interface where users can select c
 - Personalized recommendations based on user preferences.
 - Enhanced visualization for trend predictions.
 
+## Demo Video
+[![Watch the video](https://drive.google.com/file/d/1FxlinE_2wYdAtm-w0dG14y5goj5c4QCr/view?usp=drive_link)](https://drive.google.com/file/d/1KlVQHs8lNikoSVge9v3NNRt_EfXkzK-s/view?usp=drive_link)
+
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
