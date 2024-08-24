@@ -9,6 +9,13 @@ header {
   border: 3px solid rgb(236, 206, 236); /* Light purple border */
   color: #fff; /* White text color */
   padding: 20px 0; /* Vertical padding */
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+main {
+  padding-top: 80px; 
 }
 
 nav ul {
